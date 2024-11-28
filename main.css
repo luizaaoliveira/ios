@@ -1,95 +1,105 @@
 
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
 body {
     font-family: 'Arial', sans-serif;
     line-height: 1.6;
-    background-color: #ffe6f0;
-    color: #333;
-    margin: 0;
+    background-color: #f8f0f8; 
+    color: #333; 
     padding: 20px;
 }
 
 h2 {
-    color: #ff1493; 
-    border-bottom: 2px solid #ff69b4; 
+    color: #e91e63; 
+    margin-bottom: 15px;
+    border-bottom: 2px solid #d81b60; 
     padding-bottom: 10px;
-    margin-bottom: 20px;
 }
 
 h3 {
-    color: #ff69b4; 
+    color: #d81b60; 
+    margin: 10px 0;
 }
 
-p, ul {
-    color: #555;
-    font-size: 1rem;
-    margin-bottom: 20px;
+p {
+    margin-bottom: 15px;
+    line-height: 1.8; 
 }
 
 ul {
-    list-style-type: square;
+    margin-left: 20px;
+    margin-bottom: 15px;
+    list-style-type: disc;
 }
 
-ul li {
-    margin-bottom: 10px;
+li {
+    margin-bottom: 5px;
 }
 
-strong {
-    color: #ff1493; 
+section {
+    background: #ffffff; 
+    border-radius: 8px; 
+    padding: 20px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1); 
+    margin-bottom: 20px; 
+}
+
+footer {
+    margin-top: 20px;
+    padding: 20px;
+    background-color: #f1c0c8; 
+    border-radius: 5px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1); 
+}
+
+footer h2 {
+    color: #c2185b; 
+}
+
+footer h3 {
+    color: #880e4f; 
 }
 
 a {
-    color: #ff69b4;
-    text-decoration: none;
-    font-weight: bold;
+    color: #e91e63; 
+    text-decoration: none; 
+    transition: color 0.3s ease; 
 }
 
 a:hover {
-    color: #ff1493;
-    text-decoration: underline;
+    color: #c2185b; 
+    text-decoration: underline; 
+}
+
+strong {
+    color: #d81b60; 
 }
 
 
-footer {
-    background-color: #ffccdd;
-    padding: 20px;
-    text-align: center;
-    border-top: 2px solid #ff69b4;
+ul li {
+    position: relative;
+    padding-left: 20px; 
 }
 
-footer h2, footer h3 {
-    color: #ff1493;
-    margin: 5px 0;
-}
-
-footer p {
-    margin-top: 15px;
-    color: #ff1493;
+ul li::before {
+    content: '•'; 
+    color: #e91e63; 
+    position: absolute;
+    left: 0;
+    font-size: 1.2em; 
 }
 
 
-footer a {
-    color: #ff69b4;
-}
-
-footer a:hover {
-    color: #ff1493;
-}
-
-
-@media (max-width: 768px) {
+@media (max-width: 600px) {
     body {
-        padding: 10px;
+        padding: 10px; 
     }
 
-    h2 {
-        font-size: 1.8rem;
-    }
-
-    h3 {
-        font-size: 1.2rem;
-    }
-
-    p {
-        font-size: 0.9rem;
+    section {
+        padding: 15px; 
     }
 }
